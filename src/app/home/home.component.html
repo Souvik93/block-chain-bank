@@ -1,0 +1,9 @@
+<p class="text-primary">
+  home works!             
+</p>
+
+<input type="text" [(ngModel)]="name"  (keyup.enter)="change()">
+<br>
+<label>{{name}} </label>
+<br>
+<input type="text" [(ngModel)]="name" (ngModelChange)="change()" >

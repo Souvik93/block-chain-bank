@@ -1,0 +1,33 @@
+<div class="container-fluid" style="background-image:url('https://s3.amazonaws.com/f6s-public/media/396746.jpg')">
+  <div class="row">
+    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class='navbar-brand' href='#'>ABC Bank</a>
+        <ul class="nav navbar-nav pull-right">
+          <li> <a [routerLink]="['/home']"> LogIn  </a>
+            <li><a [routerLink]="['/about']"> Service Offered </a>
+              <li><a [routerLink]="['/contact']"> Contact Us </a>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="col-md-10">
+     
+        <router-outlet></router-outlet>
+     
+    </div>
+<!-- <div class="col-md-5">
+<iframe src="http://localhost:8080/"></iframe>
+</div> -->
+    <div class="col-md-2">
+      <ul>
+        <li><a [routerLink]="['/home','login']"  > LogIn </a>
+
+              <li><a [routerLink]="['/home','signup']"> SignUp </a>
+      </ul>
+    </div>
+
+   
+  </div>
+</div>
